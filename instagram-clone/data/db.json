@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "username": "user test",
+    "name": "Usuário Teste",
+    "posts": "312",
+    "followers": "431",
+    "following": "231",
+    "description": "Username description"
+  },
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "123",
+      "name": "Usuário 1",
+      "posts": "312",
+      "followers": "431",
+      "following": "231",
+      "description": "Username description"
+    }
+  ]
+}
