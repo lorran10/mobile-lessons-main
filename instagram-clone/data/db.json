@@ -31,6 +31,17 @@
       "followers": "431",
       "following": "231",
       "description": "Username description"
+    },
+    {
+      "id": 3,
+      "username": "user3",
+      "password": "789",
+      "name": "Usuário 3",
+      "posts": "932",
+      "followers": "81122",
+      "following": "91",
+      "description": "Username description 3"
     }
+
   ]
 }
