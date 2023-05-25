@@ -42,6 +42,7 @@ export default function HomeScreenRouters() {
             <Tab.Screen name="media" component={Media} />
             <Tab.Screen name="notification" component={Notification} />
             <Tab.Screen name="profile_drawer" component={ProfileDrawer}/>
+          
         </Tab.Navigator>
     );
 }

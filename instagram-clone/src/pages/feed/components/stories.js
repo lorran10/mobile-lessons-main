@@ -24,6 +24,7 @@ export default function Stories() {
                 data={UserStories}
                 renderItem={({ item }) => <StorieItem name={item.username} photo={item.photo} has_storie={item.has_storie} />}
             />
+            
         </View>
     );
 }

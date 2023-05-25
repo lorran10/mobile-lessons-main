@@ -10,10 +10,11 @@ export default function StorieItem({ name, photo, has_storie }) {
     const [viewStorie, setviewStorie] = useState(has_storie);
 
     return <TouchableOpacity onPress={() => { setviewStorie(false) }}>
-        <View style={{ marginRight: 15 }}>
+        <View  style={{ marginRight: 15 }}>
             <Image source={{uri: photo}} style={styles.profile} />
             {viewStorie ? <StoryIcon style={styles.circle} width={78} height={78} /> : null}
             <Text style={styles.text}>{name}</Text>
+          
         </View>
     </TouchableOpacity>
 }
