@@ -1,15 +1,28 @@
 import { useState } from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-
+import {useNavigation} from '@react-navigation/native'
 // import photo from "../../../../assets/feed/profile.png";
 import StoryIcon from "../../../../assets/feed/story.svg";
+ 
 
 
-export default function StorieItem({ name, photo, has_storie }) {
+export default function StorieItem({ name, photo, has_storie}) {
+    const navigation = useNavigation();
 
     const [viewStorie, setviewStorie] = useState(has_storie);
 
-    return <TouchableOpacity onPress={() => { setviewStorie(false) }}>
+    const view = () =>{
+        setviewStorie(false)
+    };
+    const routerPush =() =>{
+        navigation.navigate('ShowStorie')
+    };
+    const handlePress = () => {
+        view();
+        routerPush();
+    }
+  
+    return <TouchableOpacity  onPress={handlePress}>
         <View  style={{ marginRight: 15 }}>
             <Image source={{uri: photo}} style={styles.profile} />
             {viewStorie ? <StoryIcon style={styles.circle} width={78} height={78} /> : null}

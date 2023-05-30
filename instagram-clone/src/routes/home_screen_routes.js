@@ -1,13 +1,13 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
-import Feed from "../pages/feed";
-import Profile from '../pages/profile';
 import Search from '../pages/search';
 import Notification from '../pages/notification';
 import Media from '../pages/media';
 import { StyleSheet } from 'react-native';
 import ProfileDrawer from './profile_drawer';
+import ShowStories from './show_stories';
+import Feed from "../pages/feed";
+
 
 const Tab = createBottomTabNavigator();
 
@@ -37,12 +37,11 @@ export default function HomeScreenRouters() {
                 tabBarShowLabel: false
             })}
         >
-            <Tab.Screen name="feed" component={Feed} />
+            <Tab.Screen name="feed" component={ShowStories} />
             <Tab.Screen name="search" component={Search} />
             <Tab.Screen name="media" component={Media} />
             <Tab.Screen name="notification" component={Notification} />
             <Tab.Screen name="profile_drawer" component={ProfileDrawer}/>
-          
         </Tab.Navigator>
     );
 }

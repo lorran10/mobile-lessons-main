@@ -17,7 +17,7 @@ export default function Stories() {
     }, []);
 
     return (
-        <View style={styles.container}>
+        <View style={styles.container} >
             <FlatList
                 horizontal
                 showsHorizontalScrollIndicator={false}
